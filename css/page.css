@@ -1,0 +1,130 @@
+/* Стили отдельных страниц сайта с сезонами сериала */
+
+.menu__list-link--active {
+  color: #85ccdc;
+  text-decoration: underline;
+}
+
+.menu__container {
+  max-width: 1385px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 90vh;
+  position: relative;
+}
+
+.page-logo {
+  position: absolute;
+}
+
+/* Наложение тени на банери страниц сезонов */
+.page-header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 80px;
+  left: 0;
+}
+
+.page-header__1 {
+  background-image: url("../images/backgrounds/season-1.jpg");
+}
+
+.page-header__2 {
+  background-image: url("../images/seasons/seasons-image-2-bg.jpg");
+}
+
+.page-header__3 {
+  background-image: url("../images/seasons/seasons-image-3-bg.jpg");
+}
+
+.page-header__4 {
+  background-image: url("../images/seasons/seasons-image-4-bg.jpg");
+}
+
+.page-header__5 {
+  background-image: url("../images/seasons/seasons-image-5-bg.jpg");
+}
+
+.page-header__6 {
+  background-image: url("../images/seasons/seasons-image-6-bg.jpg");
+}
+
+.season-info {
+  position: absolute;
+  max-width: 1385px;
+  display: flex;
+  padding: 44px 47px 64px 35px;
+  background-color: #0e0e0e;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.season-info__num {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 56px;
+  text-align: center;
+  margin-right: 51px;
+}
+
+.season-info__num span {
+  display: block;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.seasons__item-name:hover .seasons__link {
+  opacity: 1;
+}
+
+.seasons__item-name {
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seasons__item-name::before {
+  content: "Спецвыпуск";
+  position: absolute;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 112px;
+  color: #600e09;
+  left: 0;
+  top: -75px;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+.seasons__item-name:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 14, 14, 0.7);
+}
+
+.season-info__text p {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,227 @@
+/* max-width: 1420px */
+@media (max-width: 1420px) {
+  .page-logo {
+    left: 10px;
+    top: -6px;
+  }
+}
+
+/* max-width: 1366px */
+@media (max-width: 1366px) {
+  .logo__img {
+    width: 60%;
+  }
+
+  .menu__list-link {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about__info {
+    width: 250px;
+  }
+
+  .page-header {
+    height: 120vh;
+  }
+}
+
+/* max-width: 1200px */
+@media (max-width: 1200px) {
+  .heroes__inner {
+    display: block;
+  }
+
+  .heroes__slider-text {
+    max-width: 100%;
+    padding-top: 50px;
+  }
+
+  .heroes__slider-img {
+    max-width: 100%;
+  }
+}
+
+/* max-width: 1088px */
+@media (max-width: 1088px) {
+  .seasons__item {
+    height: 340px;
+  }
+}
+
+/* max-width: 992px */
+@media (max-width: 992px) {
+  .page-logo {
+    display: none;
+  }
+}
+
+/* max-width: 768px */
+@media (max-width: 768px) {
+  .about__inner {
+    display: block;
+  }
+  .section-page {
+    padding: 50px 0;
+  }
+  .title {
+    margin-top: 240px;
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .video__text {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .video__text span {
+    padding-right: 200px;
+  }
+
+  .video__btn {
+    margin-right: 0;
+    padding-left: 62px;
+  }
+
+  .video__btn::before {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    top: -16px;
+  }
+  .seasons__inner {
+    grid-gap: 80px 35px;
+  }
+
+  .heroes__name {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 25px;
+  }
+}
+
+/* max-width: 640px */
+@media (max-width: 640px) {
+  .menu {
+    padding: 0;
+    background: linear-gradient(
+      180deg,
+      #111213 0%,
+      #111213 10%,
+      rgba(32, 31, 33, 0) 86.33%
+    );
+    text-align: center;
+  }
+
+  .menu__list {
+    display: block;
+    transform: translateY(-130%);
+    transition: all 0.5s;
+  }
+
+  .menu__list.menu__list--active {
+    transform: translateY(0%);
+    padding: 100px 0 50px;
+    background-color: rgba(32, 31, 33, 0.6);
+  }
+
+  .menu__list-link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .logo {
+    padding-top: 21vh;
+  }
+
+  .page-logo {
+    display: block;
+    z-index: 10;
+    top: 22px;
+  }
+
+  .season-info {
+    display: block;
+    padding: 30px 10px 0 10px;
+    margin-bottom: -230px;
+  }
+
+  .season-info__num {
+    text-align: left;
+    font-size: 50px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+
+  .season-info__num span {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .menu__btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .menu__btn span {
+    background-color: #ffffff;
+    height: 5px;
+    width: 100%;
+  }
+
+  .menu__btn::after,
+  .menu__btn::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+  }
+
+  .menu__btn::before {
+    top: 0;
+    left: 0;
+  }
+  .menu__btn::after {
+    bottom: 0;
+    left: 0;
+  }
+
+  /* Убираем тень с банера страниц */
+  .page-header::after {
+    display: none;
+  }
+  .copy {
+    margin-bottom: 30px;
+  }
+}
+
+/* max-width: 414px */
+@media (max-width: 414px) {
+  .seasons__item {
+    height: 203px;
+  }
+}
+
+/* max-width: 375px */
+@media (max-width: 374px) {
+  .page-header {
+    height: 200vh;
+  }
+}

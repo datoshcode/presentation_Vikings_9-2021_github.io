@@ -1,0 +1,367 @@
+<!-- 
+Сайт свёрстан по макету "Сериал "Викинги";
+Автор вёрстки: Андрей Овчаров;
+Дата вёрстки: 20.04.2021; 
+E-mail: datoshcode@gmail.com.
+Все авторские права на графический макет, принадлежат его автору. 
+Сайт сверстан с ознакомительной целью, без получения коммерческой выгоды.
+
+HTML-код успешно прошел проверку данных на валидность с помощью: https://validator.w3.org. Ошибок не обнаружено.
+-->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="images/icons/icon.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Сериал &#34;Викинги&#34;</title>
+
+    <!-- Шрифт "Roboto Condensed", sans-serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <!-- Шапка веб-сайта /begin-code-->
+    <header class="header">
+      <nav class="menu">
+        <!-- Кнопка меню для адаптива -->
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="pages/season-1.html">1 сезон</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="pages/season-2.html">2 сезон</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="pages/season-3.html">3 сезон</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="pages/season-4.html">4 сезон</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="pages/season-5.html">5 сезон</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="pages/season-6.html">6 сезон</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img class="logo__img" src="images/icons/logo.webp" alt="Логотип" />
+      </div>
+    </header>
+    <!-- Шапка веб-сайта ../end-code-->
+
+    <!-- О сериале /begin-code-->
+    <section class="about section-page">
+      <div class="container">
+        <h3 class="title">О сериале</h3>
+        <div class="about__inner">
+          <ul class="about__info">
+            <li class="about__info-item">
+              Жанр
+              <span>Историческая драма</span>
+            </li>
+
+            <li class="about__info-item">
+              Сезонов
+              <span>6</span>
+            </li>
+
+            <li class="about__info-item">
+              Длительность серии
+              <span>45 минут</span>
+            </li>
+
+            <li class="about__info-item">
+              На экранах
+              <span>С 3 марта 2013 по сей день</span>
+            </li>
+          </ul>
+          <div class="about__text">
+            <p>
+              Викинги – шикарный исторический сериал, один из лучших в своем
+              жанре, шоу может похвастаться огромной фан-базой, а также тем, что
+              пробудил интерес к истории и возродил моду на викингов.
+            </p>
+            <p>
+              &#34;Викинги&#34; созданы по заказу канала американского канала
+              History, однако работали над ним канадцы и ирландцы. Сериал
+              поражает масштабными сценами сражений, добротным и глубоким
+              сценарием, а также максимальным вниманием к исторической эпохи.
+              Авторы сериала потратили кучу времени и денег (бюджет первого
+              сезона - $40 млн, дальше суммы возросли) на то, чтобы викинги и их
+              современники выглядели в шоу так, какими они был в свое время –
+              VIII – IX веках нашей эры. С другой стороны – отсутствие точных
+              исторических фактов и (полу)легендарность многих событий позволили
+              авторам сериала вольную трактовку многих событий.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- О сериале ../end-code-->
+
+    <!-- Трейлер сериала /begin-code-->
+    <section class="video">
+      <div class="container">
+        <h3 class="video__text">
+          <span>Надвигается </span>
+          шторм...
+        </h3>
+        <a
+          class="video__btn"
+          data-fancybox
+          href="https://www.youtube.com/watch?v=1YVxm0GKhkM"
+          >Посмотреть трейлер сериала</a
+        >
+      </div>
+    </section>
+    <!-- Трейлер сериала ../end-code-->
+
+    <!-- Все сезоны /begin-code -->
+    <section class="seasons section__page">
+      <div class="container">
+        <h3 class="title">Все сезоны</h3>
+        <ol class="seasons__inner">
+          <!-- Сезон 1 -->
+          <li
+            class="seasons__item"
+            style="background-image: url(images/seasons/seasons-image-1.jpg)"
+          >
+            <a class="seasons__link" href="pages/season-1.html">Смотреть</a>
+          </li>
+          <!-- Сезон 2 -->
+          <li
+            class="seasons__item"
+            style="background-image: url(images/seasons/seasons-image-2.jpg)"
+          >
+            <a class="seasons__link" href="pages/season-2.html">Смотреть</a>
+          </li>
+          <!-- Сезон 3 -->
+          <li
+            class="seasons__item"
+            style="background-image: url(images/seasons/seasons-image-3.jpg)"
+          >
+            <a class="seasons__link" href="pages/season-3.html">Смотреть</a>
+          </li>
+          <!-- Сезон 4 -->
+          <li
+            class="seasons__item"
+            style="background-image: url(images/seasons/seasons-image-4.jpg)"
+          >
+            <a class="seasons__link" href="pages/season-4.html">Смотреть</a>
+          </li>
+          <!-- Сезон 5 -->
+          <li
+            class="seasons__item"
+            style="background-image: url(images/seasons/seasons-image-5.jpg)"
+          >
+            <a class="seasons__link" href="pages/season-5.html">Смотреть</a>
+          </li>
+          <!-- Сезон 6 -->
+          <li
+            class="seasons__item"
+            style="background-image: url(images/seasons/seasons-image-6.jpg)"
+          >
+            <a class="seasons__link" href="pages/season-6.html">Смотреть</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- Все сезоны ../end-code -->
+
+    <!-- Главные герои /begin-code-->
+    <section class="heroes section__page">
+      <div class="container">
+        <h3 class="title">Главные герои</h3>
+        <div class="heroes__inner">
+          <div class="heroes__slider-img">
+            <!-- Фото Рагнар -->
+            <img
+              class="heroes__images"
+              src="images/heroes/hero-1.jpg"
+              alt="Рагнар"
+            />
+
+            <!-- Фото Лагерта -->
+            <img
+              class="heroes__images"
+              src="images/heroes/hero-2.jpg"
+              alt="Лагерта"
+            />
+
+            <!-- Фото Ролло -->
+            <img
+              class="heroes__images"
+              src="images/heroes/hero-3.jpg"
+              alt="Ролло"
+            />
+
+            <!-- Фото Аслауг -->
+            <img
+              class="heroes__images"
+              src="images/heroes/hero-4.jpg"
+              alt="Аслауг"
+            />
+
+            <!-- Фото Бьерн -->
+            <img
+              class="heroes__images"
+              src="images/heroes/hero-5.jpg"
+              alt="Бьерн"
+            />
+
+            <!-- Фото Ивар -->
+            <img
+              class="heroes__images"
+              src="images/heroes/hero-6.jpg"
+              alt="Ивар"
+            />
+          </div>
+
+          <div class="heroes__slider-text">
+            <!-- О Рагнаре -->
+            <div class="heroes__text">
+              <h4 class="heroes__name">Рагнар</h4>
+              <p>
+                Рагнар Лодброк (др.-сканд. Ragnarr Loðbrók) - полулегендарный
+                скандинавский конунг из рода Инглингов, ключевой персонаж
+                сериала.
+              </p>
+              <p>
+                Умелый воин и амбициозный вождь, Рагнар на протяжении почти всей
+                своей жизни следует пути викинга. Рассекая море в поисках боевой
+                славы и наживы, он стремится обрести новые знания, открыть
+                неизвестные земли и изменить нелегкую судьбу своего народа,
+                живущего в суровых условиях Скандинавского полуострова.
+              </p>
+            </div>
+
+            <!-- О Лагерте -->
+            <div class="heroes__text">
+              <h4 class="heroes__name">Лагерта</h4>
+              <p>
+                Лагерта (др.-сканд. Hlaðgerðr) - известная скандинавская
+                воительница, упомянутая в хрониках Саксона Грамматика, первая
+                жена датского морского конунга Рагнара Лодброка.
+              </p>
+              <p>
+                Эта отважная и независимая женщина способна проявлять железную
+                решимость, когда дело касается ее личного достоинства, семьи или
+                власти. Лагерта также известна своим милосердием и
+                благородством. В сериале Лагерта активно участвует в походах
+                викингов, колонизации ими новых земель и междоусобных распрях
+                скандинавских вождей.
+              </p>
+            </div>
+
+            <!-- О Ролло -->
+            <div class="heroes__text">
+              <h4 class="heroes__name">Ролло</h4>
+              <p>
+                Ролло (др.-сканд. Hrólfr) - известный вождь викингов, первый
+                герцог Нормандский, основатель Нормандской династии. Старший
+                брат Рагнара Лодбро́ка.
+              </p>
+              <p>
+                Знаменитый своей силой, бесстрашием и диким, импульсивным
+                нравом, он активно участвует в разорительных набегах викингов на
+                страны Европы. Безуспешные попытки возвыситься на фоне
+                влиятельного и удачливого брата приводят Ролло к ожесточенной
+                внутренней борьбе, которая делает его несчастным и вынуждает
+                искать пути выхода из кризиса.
+              </p>
+            </div>
+
+            <!-- Об Аслауг -->
+            <div class="heroes__text">
+              <h4 class="heroes__name">Аслауг</h4>
+              <p>
+                Аслауг (др.-сканд. Aslaug Sigurðardóttir) - полулегендарная
+                скандинавская дроттнинг, упоминаемая в ряде средневековых саг. В
+                сериале - гётская аристократка, вторая жена Рагнара Лодброка и
+                правительница Каттегата.
+              </p>
+              <p>
+                Аслауг обладает даром провидицы и иногда способна предугадывать
+                будущее посредством видений. Мать знаменитых скандинавских
+                вождей - Уббе, Хвитсерка, Сигурда Змееглазого и Ивара
+                Бескостного, рожденных от Рагнара.
+              </p>
+            </div>
+
+            <!-- О Бьерне -->
+            <div class="heroes__text">
+              <h4 class="heroes__name">Бьёрн</h4>
+              <p>
+                Бьёрн Железнобокий (др.-сканд. Björn Járnsíða) - полулегендарный
+                скандинавский конунг, основатель шведской королевской династии
+                Мунсё. В сериале - сын Рагнара Лодброка и Лагерты.
+              </p>
+              <p>
+                Сильный и решительный человек, Бьёрн намерен стать великим
+                воином, лидером и первооткрывателем. Он полностью разделяет
+                жажду своего отца к приключениям и поддерживает его, регулярно
+                участвуя в грабительских набегах викингов.
+              </p>
+            </div>
+
+            <!-- Об Иваре -->
+            <div class="heroes__text">
+              <h4 class="heroes__name">Ивар</h4>
+              <p>
+                Ивар Бескостный (др.-сканд. Ívarr hinn Beinlausi) -
+                полулегендарный вождь датских викингов, известный неистовством в
+                бою. В сериале - четвертый сын Рагнара Лодброка и Аслауг,
+                получивший свое прозвище из-за нарушенного остеогенеза.
+              </p>
+              <p>
+                Самый агрессивный и неуравновешенный среди своих братьев. В
+                своем тщеславии он объявляет себя живым богом и устанавливает
+                кровавый культ собственной личности. Утратив власть, Ивар
+                избегает возмездия и скрывается на востоке, вынашивая планы
+                мести.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Главные герои ../end-code-->
+
+    <!-- Подвал сайта /begin-code -->
+    <footer class="footer">
+      <div class="container">
+        <p class="copy">
+          Сериал &#34;Викинги&#34;. Правами на сериал владеет канал History.
+        </p>
+      </div>
+    </footer>
+    <!-- Подвал сайта ../end-code -->
+
+    <!-- jquery + fancybox -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
